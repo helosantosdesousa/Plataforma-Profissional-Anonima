@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Plataforma Profissional Anonima</string>
+    <string name="app_name">Plataforma Profissional\nAnônima</string>
+    <string name="btn_login_user">Nome de usuário</string>
+    <string name="btn_login_password">Senha</string>
+    <string name="password_recovery">Esqueci minha senha</string>
+    <string name="create_account">Crie um ID anônimo</string>
 </resources>

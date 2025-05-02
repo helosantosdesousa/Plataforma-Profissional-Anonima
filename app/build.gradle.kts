@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.github.helosantosdesousa.plataformaprofissionalanonima"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.github.helosantosdesousa.plataformaprofissionalanonima"
