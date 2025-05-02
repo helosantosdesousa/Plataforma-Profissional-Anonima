@@ -1,7 +1,15 @@
 <resources>
+
+    <!-- Login Activity -->
     <string name="app_name">Plataforma Profissional\nAnônima</string>
     <string name="btn_login_user">Nome de usuário</string>
     <string name="btn_login_password">Senha</string>
     <string name="password_recovery">Esqueci minha senha</string>
     <string name="create_account">Crie um ID anônimo</string>
+
+    <!-- ContentFeedBactivity -->
+    <string name="btn_feed">Feed</string>
+    <string name="btn_forum">Fórum</string>
+    <string name="btn_reputation">Reputation</string>
+
 </resources>

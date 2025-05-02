@@ -6,4 +6,7 @@
     <color name="btn_login">#29c5f6</color>
     <color name="grey">#D7D7D7</color>
     <color name="bg_main_grey">#f9f9f9</color>
+    <color name="main_font_color">#f9f9f9</color>
+    <color name="secondary_font_color">#BCBCBC</color>
+    <color name="link_color">#00146A</color>
 </resources>
