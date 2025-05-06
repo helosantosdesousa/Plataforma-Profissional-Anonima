@@ -9,6 +9,7 @@
     android:fillViewport="true"
     android:background="@color/bg_login">
 
+
     <TextView
         android:id="@+id/tv_app_name"
         android:layout_width="wrap_content"
@@ -22,6 +23,20 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="@color/main_font_color"/>
+
+    <TextView
+        android:id="@+id/tv_security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secutiry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_id"
+        android:layout_marginBottom="30dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_font_color" />
 
     <EditText
         android:id="@+id/et_id"
