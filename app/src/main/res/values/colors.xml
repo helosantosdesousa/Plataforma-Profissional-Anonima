@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_login">#0077b6</color>
+    <color name="btn_login">#29c5f6</color>
+    <color name="grey">#D7D7D7</color>
+    <color name="bg_main_grey">#f9f9f9</color>
+    <color name="main_font_color">#f9f9f9</color>
+    <color name="secondary_font_color">#BCBCBC</color>
+    <color name="link_color">#00146A</color>
+    <color name="bg_main_activity">#3A3A3A</color>
+</resources>
