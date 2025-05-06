@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.account.LoginActivity"
     android:fillViewport="true"
-    android:background="@color/bg_login">
+    android:background="@color/bg_main_grey">
 
 
     <TextView
@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="80dp"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="@color/main_font_color"/>
@@ -32,10 +32,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_id"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:textSize="15sp"
         android:gravity="center"
-        android:textStyle="bold"
         android:textColor="@color/secondary_font_color" />
 
     <EditText
@@ -49,7 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/secondary_font_color"/>
+        android:textColor="@color/secondary_font_color"
+        />
 
     <EditText
         android:id="@+id/et_password"
@@ -67,13 +67,16 @@
         android:id="@+id/bt_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/et_password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/btn_login"/>
+        android:layout_marginTop="10dp"
+        android:paddingVertical="12dp"
+        android:backgroundTint="@color/btn_login"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/tv_forgot_id"

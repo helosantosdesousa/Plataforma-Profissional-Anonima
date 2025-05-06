@@ -16,6 +16,7 @@
     <string name="password_recovery">Esqueci minha senha</string>
     <string name="create_account">Crie um ID anônimo</string>
     <string name="secutiry">Autenticação segura</string>
+    <string name="btn_login">Login</string>
 
     <!-- ContentFeedActivity -->
     <string name="btn_chat">Chat</string>

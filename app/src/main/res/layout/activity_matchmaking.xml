@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_main_grey"
     tools:context=".ui.matchmaking.MatchmakingActivity">
 
     <LinearLayout
@@ -43,7 +44,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/user_layout"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        />
 
     <Button
         android:id="@+id/bt_interested"
@@ -54,7 +56,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_user" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_about_user"
+        android:backgroundTint="@color/bg_buttons"/>
 
     <Button
         android:id="@+id/bt_ignore"
@@ -64,6 +67,7 @@
         android:text="@string/btn_ignore"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_interested" />
+        app:layout_constraintTop_toBottomOf="@id/bt_interested"
+        android:backgroundTint="@color/bg_buttons"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

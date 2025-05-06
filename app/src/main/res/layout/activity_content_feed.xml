@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.chat.feed.ContentFeedActivity"
     android:background="@color/bg_main_grey"
-    android:layout_marginBottom="15dp">
+    android:layout_paddingBottom="15dp">
 
     <TextView
         android:id="@+id/tv_forum"
@@ -20,7 +20,8 @@
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/main_font_color"/>
 
     <LinearLayout
         android:id="@+id/layout_main_buttons"
@@ -37,12 +38,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn_matchmaking"
-            android:layout_marginEnd="20dp" />
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/bg_buttons"/>
 
         <Button
             android:id="@+id/bt_forums"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/bg_buttons"
             android:text="@string/btn_forum" />
     </LinearLayout>
 
@@ -90,7 +93,7 @@
                             android:id="@+id/tv_post"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus rutrum ligula, id suscipit magna tempor ac. Vivamus dignissim sed metus sed suscipit. Pellentesque pulvinar non risus sit amet cursus. Morbi id mauris nec felis mattis euismod. Aenean sed mauris."
+                            android:text="Se você tem dificuldade em se posicionar no trabalho, recomendo muito investir em cursos de comunicação assertiva. "
                             android:maxLines="3"
                             android:ellipsize="end" />
 
@@ -133,7 +136,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus rutrum ligula, id suscipit magna tempor ac. Vivamus dignissim sed metus sed suscipit. Pellentesque pulvinar non risus sit amet cursus. Morbi id mauris nec felis mattis euismod. Aenean sed mauris."
+                            android:text="Li um artigo sobre produtividade que me fez repensar totalmente minha rotina. A ideia central era: 'produtividade não é fazer mais coisas, é fazer as coisas certas'. Desde então,"
                             android:maxLines="3"
                             android:ellipsize="end" />
 
@@ -176,7 +179,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus rutrum ligula, id suscipit magna tempor ac. Vivamus dignissim sed metus sed suscipit. Pellentesque pulvinar non risus sit amet cursus. Morbi id mauris nec felis mattis euismod. Aenean sed mauris."
+                            android:text="Hoje percebi o quanto normalizamos ambientes tóxicos em nome de 'desafios profissionais'. A pressão constante, as respostas atravessadas"
                             android:maxLines="3"
                             android:ellipsize="end" />
 
@@ -220,7 +223,7 @@
                             android:id="@+id/tv_post_excerpt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus rutrum ligula, id suscipit magna tempor ac. Vivamus dignissim sed metus sed suscipit. Pellentesque pulvinar non risus sit amet cursus. Morbi id mauris nec felis mattis euismod. Aenean sed mauris."
+                            android:text="Ver pessoas sendo promovidas por proximidade com chefes, enquanto quem realmente entrega continua invisível, é desmotivador."
                             android:maxLines="3"
                             android:ellipsize="end" />
 
@@ -263,7 +266,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus rutrum ligula, id suscipit magna tempor ac. Vivamus dignissim sed metus sed suscipit. Pellentesque pulvinar non risus sit amet cursus. Morbi id mauris nec felis mattis euismod. Aenean sed mauris."
+                            android:text="Depois de anos em uma área que não me realizava, decidi mudar completamente de carreira. Fiz cursos online à noite, atualizei meu portfólio."
                             android:maxLines="3"
                             android:ellipsize="end" />
 
