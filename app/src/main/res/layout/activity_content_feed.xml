@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.chat.feed.ContentFeedActivity"
-    android:background="@color/bg_main_grey"
-    android:layout_paddingBottom="15dp">
+    android:background="@color/bg_main_grey">
 
     <TextView
         android:id="@+id/tv_forum"
@@ -293,7 +292,7 @@
         android:id="@+id/layout_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
