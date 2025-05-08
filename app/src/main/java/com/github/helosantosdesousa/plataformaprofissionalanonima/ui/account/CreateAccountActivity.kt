@@ -6,7 +6,7 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.github.helosantosdesousa.plataformaprofissionalanonima.R
-import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.chat.feed.ContentFeedActivity
+import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.feed.ContentFeedActivity
 
 class CreateAccountActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.github.helosantosdesousa.plataformaprofissionalanonima.R
 import com.github.helosantosdesousa.plataformaprofissionalanonima.databinding.ActivityMainBinding
-import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.chat.feed.ContentFeedActivity
+import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.feed.ContentFeedActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
