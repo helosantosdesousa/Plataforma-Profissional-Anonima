@@ -1,21 +1,14 @@
 package com.github.helosantosdesousa.plataformaprofissionalanonima.ui.feed
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.fragment.app.commit
 import com.github.helosantosdesousa.plataformaprofissionalanonima.R
-import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.account.CreateAccountActivity
 import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.chat.ChatFragment
-import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.forum.ForumFragment
 import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.profile.ProfileFragment
 import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.support.SupportFragment
-import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.matchmaking.MatchmakingFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ContentFeedActivity : AppCompatActivity() {
 
@@ -28,7 +21,6 @@ class ContentFeedActivity : AppCompatActivity() {
             handleNavigation(item.itemId)
         }
 
-        // Exiba o fragmento inicial (PostListFragment)
         supportFragmentManager.commit {
             replace(R.id.fragment_container, PostListFragment())
         }
@@ -39,7 +31,7 @@ class ContentFeedActivity : AppCompatActivity() {
 
     }
 
-    // Função para lidar com navegação na BottomNavigationView
+    // navegar no menu
     private fun handleNavigation(itemId: Int): Boolean {
         return when (itemId) {
             R.id.navigation_home -> {

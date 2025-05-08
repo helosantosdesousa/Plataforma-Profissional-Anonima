@@ -59,7 +59,9 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     android:text="@string/btn_forum1"
-    android:backgroundTint="@color/bg_buttons"/>
+    android:backgroundTint="@color/bg_buttons"
+    android:textSize="20dp"
+        android:padding="10dp"/>
 
     <Button
     android:id="@+id/btn_forum2"
@@ -70,7 +72,9 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     android:text="@string/btn_forum2"
-   android:backgroundTint="@color/bg_buttons"/>
+   android:backgroundTint="@color/bg_buttons"
+   android:textSize="20dp"
+        android:padding="10dp"/>
 
     <Button
    android:id="@+id/btn_forum3"
@@ -81,7 +85,9 @@
    app:layout_constraintEnd_toEndOf="parent"
    app:layout_constraintStart_toStartOf="parent"
    android:text="@string/btn_forum3"
-   android:backgroundTint="@color/bg_buttons"/>
+   android:backgroundTint="@color/bg_buttons"
+   android:textSize="20dp"
+        android:padding="10dp"/>
 
 
 

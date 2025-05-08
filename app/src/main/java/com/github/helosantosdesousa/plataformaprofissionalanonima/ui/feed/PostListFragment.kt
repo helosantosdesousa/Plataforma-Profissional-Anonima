@@ -5,13 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.github.helosantosdesousa.plataformaprofissionalanonima.R
 import com.github.helosantosdesousa.plataformaprofissionalanonima.model.Post
-import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.matchmaking.MatchmakingFragment
 import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.forum.ForumFragment
+import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.matchmaking.MatchmakingFragment
+import kotlin.random.Random
 
 class PostListFragment : Fragment() {
 
@@ -19,55 +22,42 @@ class PostListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Infla o layout para o fragmento
         val rootView = inflater.inflate(R.layout.fragment_posts_list, container, false)
 
-        // Lista de posts
+
+        //posts mockados
         val posts = arrayListOf(
-            Post("Maria"),
-            Post("João")
-            // Adicione outros posts conforme necessário
+            Post("Acabei de sair de um webinar sobre inteligência emocional no ambiente de trabalho. Incrível como pequenas mudanças no comportamento podem melhorar tanto a convivência com colegas! Fico pensando como seria bom se isso fosse ensinado na faculdade… alguém mais participou?", Random.nextInt()),
+            Post("Finalizei um curso de UX Design hoje e tô impressionado com o quanto isso muda a forma de pensar soluções. Sempre achei que era só “deixar bonito”, mas é muito mais profundo. Alguém aí fez algo parecido e aplicou no trabalho?", Random.nextInt()),
+            Post("Às vezes cansa tentar crescer na carreira sem saber se estou indo pelo caminho certo. Vejo tanta gente fazendo mil cursos, eventos, networking, e me sinto perdido. Só queria dizer que, se você também sente isso, você não está sozinho.", Random.nextInt()),
+            Post("Fui num evento sobre liderança para jovens profissionais e saí com a cabeça borbulhando de ideias. Pena que na minha empresa ainda não há espaço pra aplicar isso. Mas sigo tentando me desenvolver. Valeu a pena cada segundo!", Random.nextInt()),
+            Post("Hoje me dei conta de como subestimei minhas experiências. Nunca achei que contar minha trajetória de erros e aprendizados fosse ajudar alguém, mas recebi várias mensagens depois de um post antigo. A gente compartilha, desabafa, e no fim inspira.", Random.nextInt()),
+            Post("Hoje me dei conta de como subestimei minhas experiências. Nunca achei que contar minha trajetória de erros e aprendizados fosse ajudar alguém, mas recebi várias mensagens depois de um post antigo. A gente compartilha, desabafa, e no fim inspira.", Random.nextInt()),
+            Post("Hoje me dei conta de como subestimei minhas experiências. Nunca achei que contar minha trajetória de erros e aprendizados fosse ajudar alguém, mas recebi várias mensagens depois de um post antigo. A gente compartilha, desabafa, e no fim inspira.", Random.nextInt()),
         )
 
-        // Encontrar o LinearLayout onde os posts serão adicionados
+        // adiciona posts ao layout
         val linearPosts: LinearLayout = rootView.findViewById(R.id.linear_posts)
 
-        // Iterar sobre a lista de posts e criar os TextViews dinamicamente
         for (post in posts) {
-            // Criar um LinearLayout para o contêiner do post com fundo branco
-            val postContainer = LinearLayout(requireContext())
-            postContainer.orientation = LinearLayout.VERTICAL
-            postContainer.setPadding(12, 12, 12, 12)
-            postContainer.setBackgroundColor(resources.getColor(R.color.white))
+            val postView = layoutInflater.inflate(R.layout.item_post, linearPosts, false)
 
-            // Definir margens para separar os posts
-            val params = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            )
-            params.setMargins(0, 0, 0, 12)
-            postContainer.layoutParams = params
+            val imageView = postView.findViewById<ImageView>(R.id.post_image)
+            val descTextView = postView.findViewById<TextView>(R.id.post_description)
 
-            // Criar o TextView para o nome
-            val nomeTextView = TextView(requireContext())
-            nomeTextView.text = "Nome: ${post.description}"
-            nomeTextView.textSize = 16f
-            nomeTextView.setTypeface(nomeTextView.typeface, android.graphics.Typeface.BOLD)
+            descTextView.text = post.description
 
-            // Adicionar os TextViews no layout do post
-            postContainer.addView(nomeTextView)
+            postView.setOnClickListener {
+                Toast.makeText(requireContext(), "Clicou no post ${post.id}", Toast.LENGTH_SHORT).show()
+            }
 
-            // Adicionar o layout do post no LinearLayout principal
-            linearPosts.addView(postContainer)
+            linearPosts.addView(postView)
         }
 
-        // Acessar os botões do layout
         val btnMatchmaking: Button = rootView.findViewById(R.id.btn_matchmaking)
         val btnForum: Button = rootView.findViewById(R.id.btn_forum)
 
-        // Configurar os listeners dos botões para navegar entre os fragmentos
         btnMatchmaking.setOnClickListener {
-            // Navegar para o fragmento de matchmaking
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, MatchmakingFragment())
                 .addToBackStack(null)
@@ -75,14 +65,13 @@ class PostListFragment : Fragment() {
         }
 
         btnForum.setOnClickListener {
-            // Navegar para o fragmento de fórum
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, ForumFragment())
                 .addToBackStack(null)
                 .commit()
         }
 
-        // Retorna a view inflada
         return rootView
     }
 }
+

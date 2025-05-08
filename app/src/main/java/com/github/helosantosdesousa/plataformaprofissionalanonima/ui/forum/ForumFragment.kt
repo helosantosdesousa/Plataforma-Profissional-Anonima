@@ -16,7 +16,6 @@ class ForumFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflar o layout do fragment
         return inflater.inflate(R.layout.fragment_forum, container, false)
     }
 }

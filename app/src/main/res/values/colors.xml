@@ -10,4 +10,7 @@
     <color name="secondary_font_color">#3C3D37</color>
     <color name="link_color">#00146A</color>
     <color name="bg_main_activity">#454545</color>
+
+    <color name="bg_other_message">#03A9F4</color>
+    <color name="bg_message">#FFFFFF</color>
 </resources>

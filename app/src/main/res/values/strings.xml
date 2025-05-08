@@ -2,14 +2,14 @@
 
     <string name="app_name_subtitle">Conecte-se de forma segura, anônima e inteligente</string>
 
-    <!-- Create account Activity -->
+    <!-- Create Account-->
     <string name="create_account_title">Crie uma conta anônima</string>
     <string name="btn_send">Enviar</string>
     <string name="btn_signup_user">E-mail</string>
     <string name="btn_signup_password">Senha</string>
     <string name="btn_signup_name">Nome de usuário</string>
 
-    <!-- Login Activity -->
+    <!-- Login -->
     <string name="app_name">Plataforma Profissional\nAnônima</string>
     <string name="btn_login_user">Nome de usuário</string>
     <string name="btn_login_password">Senha</string>
@@ -18,7 +18,7 @@
     <string name="secutiry">Autenticação segura</string>
     <string name="btn_login">Login</string>
 
-    <!-- ContentFeedActivity -->
+    <!-- ContentFeed -->
     <string name="btn_chat">Chat</string>
     <string name="btn_forum">Fórum</string>
     <string name="btn_matchmaking">Matchmaking</string>
@@ -26,14 +26,14 @@
     <string name="btn_profile">Meu perfil</string>
     <string name="tv_title">Feed</string>
 
-    <!-- Matchmaking Activity -->
+    <!-- Matchmaking -->
     <string name="tv_user_tittle">TechNomadX</string>
     <string name="tv_user_compability">Compatibilidade: </string>
     <string name="tv_user_compability_rate">Alta </string>
     <string name="btn_match">Interessado </string>
     <string name="btn_ignore">Ignorar</string>
 
-    <!-- Forums Activity -->
+    <!-- Forums -->
     <string name="tv_forums">Fóruns profissionais</string>
 v    <string name="tv_forums_desc">Participe de discussões relevantes sem revelar sua identidade. Moderação feita por IA para manter um ambiente seguro e produtivo.</string>
     <string name="tv_forums_avaliable">Fóruns:</string>
@@ -42,7 +42,7 @@ v    <string name="tv_forums_desc">Participe de discussões relevantes sem revel
     <string name="btn_forum2">Desenvolvimento </string>
     <string name="btn_forum3">Infraestrutura</string>
 
-    <!-- Profile Activity -->
+    <!-- Profile -->
     <string name="tv_email_desc">E-mail (Apenas visível à você)</string>
     <string name="tv_company_desc">Empresa/Universidade (Apenas visível à você)</string>
     <string name="tv_number_desc">Número (Verificação 2FA) </string>
@@ -51,10 +51,14 @@ v    <string name="tv_forums_desc">Participe de discussões relevantes sem revel
     <string name="tv_preferences_desc">Preferências</string>
     <string name="tv_skills_desc">Habilidades</string>
 
-    <!-- Support Activity -->
+    <!-- Support  -->
     <string name="tv_support">Suporte</string>
     <string name="tv_support_desc">Aqui prezamos pela sua experiência em nossa plataforma. Qualquer dúvida, elogio ou problema estamos à disposição.</string>
     <string name="et_support">Descreva seu problema ou dúvida aqui...</string>
+
+    <!-- Chat -->
+    <string name="hint_msg">Digite sua mensagem...</string>
+
 
 
 </resources>

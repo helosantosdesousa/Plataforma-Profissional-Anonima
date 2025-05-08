@@ -5,16 +5,16 @@
     tools:context=".ui.chat.ChatFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:layout_marginBottom="20dp">
 
-    <!-- Título do chat -->
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuário Fulano"
+        android:layout_marginTop="17dp"
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +22,6 @@
         android:gravity="center"
         />
 
-    <!-- RecyclerView para exibir as mensagens -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_chat"
         android:layout_width="0dp"
@@ -36,7 +35,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Container de entrada de mensagem -->
     <LinearLayout
         android:id="@+id/input_container"
         android:layout_width="0dp"
@@ -52,13 +50,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Digite sua mensagem" />
+            android:hint="@string/hint_msg" />
 
         <Button
             android:id="@+id/btn_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enviar" />
+            android:text="@string/btn_send" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
