@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.github.helosantosdesousa.plataformaprofissionalanonima.ui.account.LoginActivity
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val layout: ConstraintLayout = findViewById(R.id.main)
+        val layout = findViewById<ConstraintLayout>(R.id.main)
 
         layout.setOnClickListener {
             val intent = Intent(this@MainActivity, LoginActivity::class.java)

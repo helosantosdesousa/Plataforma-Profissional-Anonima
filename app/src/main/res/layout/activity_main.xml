@@ -8,7 +8,8 @@
     android:background="@color/bg_main_activity"
     android:clickable="true"
     tools:context=".MainActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:fitsSystemWindows="true">
 
     <TextView
         android:id="@+id/textView"
