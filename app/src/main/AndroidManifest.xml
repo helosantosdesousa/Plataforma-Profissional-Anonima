@@ -13,21 +13,6 @@
         android:theme="@style/Theme.PlataformaProfissionalAnonima"
         tools:targetApi="31">
         <activity
-            android:name=".ui.support.SupportFragment"
-            android:exported="false" />
-        <activity
-            android:name=".ui.profile.ProfileFragment"
-            android:exported="false" />
-        <activity
-            android:name=".ui.chat.ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.forum.ForumFragment"
-            android:exported="false" />
-        <activity
-            android:name=".ui.matchmaking.MatchmakingFragment"
-            android:exported="false" />
-        <activity
             android:name=".ui.feed.ContentFeedActivity"
             android:exported="false" />
         <activity
