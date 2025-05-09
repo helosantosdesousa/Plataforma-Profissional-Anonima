@@ -1,9 +1,13 @@
 # 📱 Plataforma Profissional Anônima
 
-Este projeto é uma aplicação Android desenvolvida como parte do **Challenge 2025 da FIAP**, no contexto da **Sociedade 5.0**. A proposta é criar uma solução que faça a diferença na sociedade. Com isso, desenvolvemos a plataforma anônima profissional**, onde usuários podem se conectar, compartilhar experiências, buscar suporte e desenvolver sua carreira em um ambiente seguro e livre de julgamentos.
+Este projeto é uma aplicação Android desenvolvida como parte do **Challenge 2025 da FIAP**, no contexto da **Sociedade 5.0**. A proposta é criar uma solução que faça a diferença na sociedade. Com isso, desenvolvemos a plataforma anônima profissional**, onde usuários podem se conectar, compartilhar experiências, buscar suporte e desenvolver sua carreira em um ambiente seguro e livre de julgamentos.  
 
+<br>
 
+![Estrutura](assets-readme/demo.gif)
 
+<br>
+ 
 ## 🚀 Funcionalidades
 
 - 🔒 **Acesso com login e criação de conta**
