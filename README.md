@@ -51,6 +51,10 @@ Este projeto é uma aplicação Android desenvolvida como parte do **Challenge 2
 ## Estrutura do projeto
 ![Estrutura](assets-readme/estrutura.png)
 
+## Versão atual
+### 1.0 - Prototipagem inicial
+Protótipo Navegável (sem persistência de dados)
+Esta primeira versão da aplicação apresenta a estrutura básica da interface com as principais telas já implementadas. Ainda virão atualizações e o projeto final funcionando de acordo com a idealização do projeto
 
 
 ## 🧑‍💻 Desenvolvido por
