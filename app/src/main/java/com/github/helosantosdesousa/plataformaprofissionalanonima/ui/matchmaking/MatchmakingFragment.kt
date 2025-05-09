@@ -11,24 +11,16 @@ class MatchmakingFragment : Fragment(R.layout.fragment_matchmaking) {
     override fun onViewCreated(view: android.view.View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Inicializa a lista de habilidades
+        // habilidads e bio mockada
         val skills = listOf("SQL", "Python", "Data Science")
         val tvAboutUser = view.findViewById<TextView>(R.id.tv_about_user)
+        val bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dolor eros, feugiat id purus quis, malesuada luctus ex. Vivamus molestie leo a ligula semper gravida. Sed consectetur sapien non dolor condimentum gravida. Cras egestas felis a nisl ultricies rutrum at non magna. Vivamus ac facilisis ex. Donec eu eros volutpat."
+        val tvBio = view.findViewById<TextView>(R.id.tv_bio_user)
+
         tvAboutUser.text = skills.joinToString(", ")
+        tvBio.text = bio
 
-        // Configura o botão "Interested"
-        val btnInterested = view.findViewById<Button>(R.id.bt_interested)
-        println("segui")
-        }
 
-        /*// Configura o botão "Ignore"
-        val btnIgnore = view.findViewById<Button>(R.id.bt_ignore)
-        btnIgnore.setOnClickListener {
-            // Substitui o fragmento atual pelo ForumFragment
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, ForumFragment()) // Substitui o fragmento atual pelo ForumFragment
-                .addToBackStack(null) // Permite que o usuário volte ao fragmento anterior
-                .commit()
-        }
-    }*/
+
     }
+}

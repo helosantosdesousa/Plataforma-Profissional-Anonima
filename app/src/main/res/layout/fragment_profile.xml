@@ -127,18 +127,19 @@
             android:textSize="14sp" />
     </LinearLayout>
 
+
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="0dp"
-        app:layout_constraintWidth_percent="0.6"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:backgroundTint="@color/bg_buttons"
         android:text="@string/bt_logout"
-        app:layout_constraintTop_toBottomOf="@id/layout_infos"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/bg_buttons"
-        />
+        app:layout_constraintTop_toBottomOf="@id/layout_infos"
+        app:layout_constraintWidth_percent="0.6" />
 
     <Button
         android:id="@+id/button"
@@ -150,6 +151,6 @@
         app:layout_constraintTop_toBottomOf="@id/btn_logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="@color/bg_buttons" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,11 +11,13 @@ import com.github.helosantosdesousa.plataformaprofissionalanonima.model.ChatMess
 class ChatAdapter(private val messages: MutableList<ChatMessage>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
+    //define o tipo de usuario
     companion object {
         private const val VIEW_TYPE_USER = 1
         private const val VIEW_TYPE_OTHER = 2
     }
 
+    // retorna o tipo da mensagem baseado no remetente
     override fun getItemViewType(position: Int): Int {
         return if (messages[position].isUser) VIEW_TYPE_USER else VIEW_TYPE_OTHER
     }

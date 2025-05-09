@@ -9,14 +9,14 @@
     tools:context=".ui.matchmaking.MatchmakingFragment"
     android:fitsSystemWindows="true">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/user_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="80dp"
-        android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
+
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_user"
@@ -24,20 +24,28 @@
             android:layout_height="120dp"
             android:scaleType="centerCrop"
             android:src="@drawable/img_user"
-            android:layout_marginEnd="10dp"
-            app:shapeAppearanceOverlay="@style/CircleImage" />
-
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_username"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
             android:text="@string/tv_user_tittle"
             android:textSize="40sp"
-            android:maxLength="10"/>
+            android:maxLength="10"
+            app:layout_constraintStart_toEndOf="@id/img_user"
+            app:layout_constraintTop_toTopOf="@id/img_user"
+            app:layout_constraintBottom_toBottomOf="@id/img_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
 
-    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <TextView
         android:id="@+id/tv_about_user"
@@ -46,7 +54,19 @@
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/user_layout"
         android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
         />
+
+    <TextView
+        android:id="@+id/tv_bio_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about_user"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/bt_interested"
@@ -57,8 +77,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_user"
-        android:backgroundTint="@color/bg_buttons"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_bio_user"
+        android:backgroundTint="@color/bg_buttons"
+        android:textSize="17sp"
+        android:padding="8dp"/>
 
     <Button
         android:id="@+id/bt_ignore"
@@ -69,7 +91,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bt_interested"
-        android:backgroundTint="@color/bg_buttons"/>
+        android:backgroundTint="@color/bg_buttons"
+        android:textSize="17sp"
+        android:padding="8dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,13 +9,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_title"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"/>
 
     <LinearLayout
         android:id="@+id/layout_main_buttons"
@@ -34,7 +35,10 @@
             android:text="@string/btn_matchmaking"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_buttons"
+            android:padding="8dp"
+            android:textSize="17sp"/>
 
         <Button
             android:id="@+id/btn_forum"
@@ -42,7 +46,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/bg_buttons"
+            android:textSize="17sp"/>
     </LinearLayout>
 
     <ScrollView

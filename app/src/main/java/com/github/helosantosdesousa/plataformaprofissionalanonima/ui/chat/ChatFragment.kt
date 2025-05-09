@@ -25,7 +25,6 @@ class ChatFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflar o layout do fragment
         return inflater.inflate(R.layout.fragment_chat, container, false)
     }
 
@@ -48,7 +47,7 @@ class ChatFragment : Fragment() {
         // Mensagens mockadas
         chatAdapter.addMessage(ChatMessage("Oi, tudo bem?", isUser = true))
         chatAdapter.addMessage(ChatMessage("Tudo sim e você?", isUser = false))
-        chatAdapter.addMessage(ChatMessage("teste?", isUser = true))
+        chatAdapter.addMessage(ChatMessage("Vi que você gosta de Python. Tem interesse em entrar na comunidade de Python Brasil?", isUser = true))
 
         btnSend.setOnClickListener {
             val msg = editMessage.text.toString()
@@ -63,11 +62,11 @@ class ChatFragment : Fragment() {
             }
         }
 
-        // Oculta a BottomNavigationView
+        //some com o menu
         requireActivity().findViewById<View>(R.id.bottom_navigation)?.visibility = View.GONE
 
+        //volta com o menu
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
-            // Envia uma notificação para o fragmento anterior (ou activity) para reexibir o menu
             parentFragmentManager.setFragmentResult("chatClosed", Bundle())
             parentFragmentManager.popBackStack()
         }

@@ -9,9 +9,10 @@
         android:id="@+id/tv_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_other_message"
-        android:textColor="#000000"
+        android:background="@color/bg_other_message"
+        android:textColor="@color/black"
         android:padding="10dp"
-        android:text="Tudo sim e você?"
-        android:maxWidth="250dp"/>
+        android:maxWidth="250dp"
+        android:textSize="15sp"
+        />
 </LinearLayout>
